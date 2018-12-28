@@ -1,10 +1,10 @@
 gemtools = {}
 
-function gemtools.register_toolset(id, name, craftitem, mine, attack)
+function gemtools.register_toolset(pack, id, name, craftitem, mine, attack)
 
-	minetest.register_tool("gemtools:pick_" .. id, {
+	minetest.register_tool(pack .. ":pick_" .. id, {
 		description = name .. " Pickaxe",
-		inventory_image = "gemtools_" .. id .. "_pick.png",
+		inventory_image = pack .. "_" .. id .. "_pick.png",
 		tool_capabilities = {
 			full_punch_interval = 0.9,
 			max_drop_level = 3,
@@ -13,9 +13,9 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 		},
 	})
 
-	minetest.register_tool("gemtools:sword_" .. id, {
+	minetest.register_tool(pack .. ":sword_" .. id, {
 	    description = name .. " Sword",
-		inventory_image = "gemtools_" .. id .. "_sword.png",
+		inventory_image = pack .. "_" .. id .. "_sword.png",
 		tool_capabilities = {
 			full_punch_interval = 0.7,
 			max_drop_level = 1,
@@ -24,9 +24,9 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 		},
 	})
 	
-	minetest.register_tool("gemtools:axe_" .. id, {
+	minetest.register_tool(pack .. ":axe_" .. id, {
 		description = name .. " Axe",
-		inventory_image = "gemtools_" .. id .. "_axe.png",
+		inventory_image = pack .. "_" .. id .. "_axe.png",
 		tool_capabilities = {
 			full_punch_interval = 0.9,
 			max_drop_level = 1,
@@ -35,10 +35,10 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 		},
 	})
 
-	minetest.register_tool("gemtools:shovel_" .. id, {
+	minetest.register_tool(pack .. ":shovel_" .. id, {
 		description = name .. " Shovel",
-		inventory_image = "gemtools_" .. id .. "_shovel.png",
-		wield_image = "gemtools_" .. id .. "_shovel.png",
+		inventory_image = pack .. "_" .. id .. "_shovel.png",
+		wield_image = pack .. "_" .. id .. "_shovel.png",
 		tool_capabilities = {
 			full_punch_interval = 1.0,
 			max_drop_level = 1,
@@ -48,7 +48,7 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 	})
 
 	minetest.register_craft({
-	        output = "gemtools:pick_" .. id,
+	        output = pack .. ":pick_" .. id,
 	        recipe = {
 			{craftitem, craftitem, craftitem},
 			{"", "default:stick", ""},
@@ -57,7 +57,7 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 	})
 
 	minetest.register_craft({
-	        output = "gemtools:axe_" .. id,
+	        output = pack .. ":axe_" .. id,
 	        recipe = {
 			{craftitem, craftitem},
 			{craftitem, "default:stick"},
@@ -66,7 +66,7 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 	})
 
 	minetest.register_craft({
-	        output = "gemtools:shovel_" .. id,
+	        output = pack .. ":shovel_" .. id,
 	        recipe = {
 			{craftitem},
 			{"default:stick"},
@@ -75,7 +75,7 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 	})
 
 	minetest.register_craft({
-	        output = "gemtools:sword_" .. id,
+	        output = pack .. ":sword_" .. id,
 	        recipe = {
 			{craftitem},
 			{craftitem},
@@ -84,7 +84,7 @@ function gemtools.register_toolset(id, name, craftitem, mine, attack)
 	})
 end
 
-gemtools.register_toolset("emerald", "Emerald", "underch:emerald",
+gemtools.register_toolset("gemtools", "emerald", "Emerald", "underch:emerald",
 	{
 		pick = {cracky = {times={[1]=4.00, [2]=1.60, [3]=0.80}, uses=25, maxlevel=2}},
 		shovel = {crumbly = {times={[1]=1.50, [2]=0.90, [3]=0.40}, uses=35, maxlevel=2}},
@@ -97,7 +97,7 @@ gemtools.register_toolset("emerald", "Emerald", "underch:emerald",
 		sword = {fleshy=6},
 	})
 
-gemtools.register_toolset("saphire", "Saphire", "underch:saphire",
+gemtools.register_toolset("gemtools", "saphire", "Saphire", "underch:saphire",
 	{
 		pick = {cracky = {times={[1]=3.00, [2]=1.40, [3]=0.70}, uses=20, maxlevel=3}},
 		shovel = {crumbly = {times={[1]=1.30, [2]=0.70, [3]=0.30}, uses=30, maxlevel=3}},
@@ -110,7 +110,7 @@ gemtools.register_toolset("saphire", "Saphire", "underch:saphire",
 		sword = {fleshy=6},
 	})
 
-gemtools.register_toolset("ruby", "Ruby", "underch:ruby",
+gemtools.register_toolset("gemtools", "ruby", "Ruby", "underch:ruby",
 	{
 		pick = {cracky = {times={[1]=3.00, [2]=1.40, [3]=0.70}, uses=20, maxlevel=3}},
 		shovel = {crumbly = {times={[1]=1.30, [2]=0.70, [3]=0.30}, uses=30, maxlevel=3}},
