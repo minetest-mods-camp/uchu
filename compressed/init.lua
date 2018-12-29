@@ -24,4 +24,10 @@ for id, s in pairs(underch.stone.defs) do
 		type = "shapeless",
 		recipe = {compressed}
 	})
+
+	minetest.register_craft({
+		    type = "cooking",
+		    output = "underch:" .. id .. " 9",
+		    recipe = compressed,
+	})
 end
