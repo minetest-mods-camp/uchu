@@ -6,7 +6,7 @@ for id, s in pairs(underch.stone.defs) do
 	minetest.register_node(condensed, {
 		description = "Condensed " .. basename .. " Cobble",
 		tiles = {"condensed_" .. id .. ".png"},
-		groups = {cracky = 3, stone = 1, smoothstone = 1},
+		groups = {cracky = 3, condensedstone = 1},
 		sounds = default.node_sound_stone_defaults(),
 		stack_max = 999
 	})
