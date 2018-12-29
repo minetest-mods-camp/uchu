@@ -29,7 +29,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "octu:octu",
 	recipe = {
-		{"underch:sapthire", "default:mese_crystal"},
+		{"underch:saphire", "default:mese_crystal"},
 		{"default:mese_crystal", "underch:saphire"},
 	}
 })
