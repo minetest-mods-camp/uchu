@@ -70,6 +70,24 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft( {
+	output = "pipeworks:detector_tube_off_1 0",
+	recipe = {
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
+		{ "mesecons:mesecon", "mesecons_materials:silicon", "mesecons:mesecon" },
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
+	},
+})
+
+minetest.register_craft( {
+	output = "pipeworks:digiline_detector_tube_1 0",
+	recipe = {
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
+		{ "digilines:wire_std_00000000", "mesecons_materials:silicon", "digilines:wire_std_00000000" },
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
+	},
+})
+
 --[[minetest.register_craft({
 	output = BASENAME.."0000 2",
 	recipe = {
@@ -140,6 +158,24 @@ minetest.register_craft({
 		{"", "underch:quartz", "underch:quartz"},
 		{"mesecons:mesecon", "", ""}
 	}
+})
+
+minetest.register_craft( {
+	output = "pipeworks:detector_tube_off_1 2",
+	recipe = {
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
+		{ "mesecons:mesecon", "underch:quartz", "mesecons:mesecon" },
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
+	},
+})
+
+minetest.register_craft( {
+	output = "pipeworks:digiline_detector_tube_1 2",
+	recipe = {
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
+		{ "digilines:wire_std_00000000", "underch:quartz", "digilines:wire_std_00000000" },
+		{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
+	},
 })
 
 --[[minetest.register_craft({

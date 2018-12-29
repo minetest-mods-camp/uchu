@@ -5,3 +5,4 @@ mesecons_fpga?
 mesecons_materials?
 mesecons_gates?
 mesecons_luacontroller?
+pipeworks?
