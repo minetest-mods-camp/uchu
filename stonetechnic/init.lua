@@ -88,3 +88,12 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = 'technic:water_powered_grinder',
+	recipe = {
+		{'underch:granite',	'underch:granite',		'underch:granite'},
+		{'underch:granite',	'technic:wrought_iron_ingot',	'underch:granite'},
+		{'default:brick',		'technic:wrought_iron_ingot',	'default:brick'},
+	}
+})
+

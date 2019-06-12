@@ -73,3 +73,12 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "pipeworks:deployer_off",
+	recipe = {
+		{ "group:wood",    "default:chest",    "group:wood"    },
+		{ "group:smoothstone", "mesecons:piston",  "group:smoothstone" },
+		{ "group:smoothstone", "mesecons:mesecon", "group:smoothstone" },
+	}
+})
+	
