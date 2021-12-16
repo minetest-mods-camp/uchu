@@ -7,13 +7,11 @@ minetest.register_craft( {
 	},
 })
 
-local have_compressed = minetest.get_modpath("compressed") ~= nil
-
-if technic ~= nil then
+if minetest.get_modpath("technic") ~= nil then
 	for id, s in pairs(underch.stone.defs) do
 		technic.register_grinder_recipe({input = {"underch:" .. id .. "_cobble"}, output = "default:gravel"})
 		technic.register_grinder_recipe({input = {"underch:" .. id}, output = "technic:stone_dust"})
-		if have_compressed then
+		if minetest.get_modpath("compressed") ~= nil then
 			technic.register_grinder_recipe({input = {"compressed:" .. id}, output = "default:gravel 9"})
 		end
 	end
