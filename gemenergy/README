@@ -2,3 +2,5 @@ Underground Challenge Utilities: Gemenergy (by Hume2)
 =====================================================
 
 License: MIT
+
+This mods adds different recipes for crafing power crystals and lasers in the mod `technic`. Red dye is replaced by ruby, green dye is replaced by emerald, blue dye is replaced by sapphire. Overriding recipes may not work properly, it might be required to comment out the corresponding recipes in the `technic` mod as well.

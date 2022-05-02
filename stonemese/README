@@ -4,3 +4,4 @@ Underground Challenge Utilities: Stonemese (by Hume2)
 License:
 * code: MIT
 
+This mod fixes the recipes in the mods `mesecons` and `pipeworks` which require a specific kind of stone. This mod allows using any kind of underch stone in these recipes.

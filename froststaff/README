@@ -2,3 +2,16 @@ Underground Challenge Utilities: Froststaff (by Hume2)
 ======================================================
 
 License: MIT
+
+Frost staff can be crafted from items in the underch mod and can be used to freeze water sources. The recipe is:
+```
+B I R
+G I P
+  I  
+```
+B ... bucket of black slime
+R ... bucket of red slime
+G ... bucket of green slime
+P ... bucket of purple slime
+I ... ice
+

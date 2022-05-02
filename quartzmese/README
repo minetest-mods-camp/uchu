@@ -4,3 +4,4 @@ Underground Challenge Utilities: Quartzmese (by Hume2)
 License:
 * code: MIT
 
+This mod registers alternative recipes for crafting items in the mods `mesecons` and `pipeworks`. Silicon is replaced by quartz, amethyst and aquamarine. Overriding recipes may not work properly, it might be required to comment out the corresponding recipes in the `technic` mod as well.

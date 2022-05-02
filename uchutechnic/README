@@ -4,3 +4,12 @@ Underground Challenge Utilities: Uchutechnic (by Hume2)
 License:
 * code: MIT
 
+This mod adds some extra recipes for the mod `technic` which employ some items in `underch`.
+
+undergroud vine -grinder-> sawdust
+ruby -grinder-> ruby dust
+
+ruby dust -compressor-> ruby
+coal dust -compressor-> coal lump
+
+fiery dust -centrifuge-> 3 sand, fire dust (if `ethereal` is enabled)

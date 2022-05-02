@@ -2,3 +2,5 @@ Underground Challenge Utilities: Bluecheese (by Hume2)
 ======================================================
 
 License: MIT
+
+This mod adds blue cheese which can be crafted from mould and cheese. Currently, cheese from mods `mobs` and `petz` are supported. Blue cheese is edible.

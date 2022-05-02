@@ -2,3 +2,18 @@ Underground Challenge Utilities: Uchu Stone (by Hume2)
 ======================================================
 
 License: MIT
+
+If a mod cannot work with the underch stones from principe, this mod adds recipes which allows crafting the default stone from any kind of underch stone. Before you enable this mod, consider the following:
+
+Try fixing other mods in a way that they can work with underch stones as well. The modpack Uchu already offers a few solutions.
+
+If all what is going on is that the mod requires default stone in the recipes, the fix is very easy. Just look up all such recipes and perform these changes:
+default:stone -> group:smoothstone
+default:cobblestone -> group:cobble
+default:stonebrick -> group:stonebrick
+default:stone_block -> group:stone_block
+default:mossycobble -> group:mossycobble
+And that's it.
+
+If the mod `technic` is enabled, you can add mod `gravelcraft` from this modpack and then you can grind cobblestone of any kind to gravel, then to sand, then to stone dust and then you can bake stone dust to default stone.
+
