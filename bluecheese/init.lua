@@ -10,3 +10,9 @@ minetest.register_craft({
 	recipe = {"mobs:cheese", "underch:mould"},
 })
 
+minetest.register_craft({
+	type = "shapeless",
+	output = "bluecheese:cheese",
+	recipe = {"petz:cheese", "underch:mould"},
+})
+
