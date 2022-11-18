@@ -27,7 +27,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "technic:laser_mk1 0",
+	output = "technic:laser_mk1",
 	recipe = {
 		{"default:diamond", "technic:brass_ingot",        "default:obsidian_glass"},
 		{"",                "technic:brass_ingot",        "technic:red_energy_crystal"},
@@ -36,7 +36,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "technic:laser_mk2 0",
+	output = "technic:laser_mk2",
 	recipe = {
 		{"default:diamond", "technic:carbon_steel_ingot", "technic:laser_mk1"},
 		{"",                "technic:carbon_steel_ingot", "technic:green_energy_crystal"},
@@ -45,7 +45,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "technic:laser_mk3 0",
+	output = "technic:laser_mk3",
 	recipe = {
 		{"default:diamond", "technic:carbon_steel_ingot", "technic:laser_mk2"},
 		{"",                "technic:carbon_steel_ingot", "technic:blue_energy_crystal"},
